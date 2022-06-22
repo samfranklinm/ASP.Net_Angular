@@ -1,0 +1,32 @@
+
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+    
+    <!-- PMId -->
+    <input name="PMId" type="hidden" ngModel="{{service.formData.PMId}}" />
+
+    <!-- Card Name -->
+    <div class="form-group">
+      <input name="CardOwnerName" ngModel="{{service.formData.CardOwnerName}}" class="form-control" placeholder="Card Owner Name" required />
+    </div>
+
+    <!-- Card Number -->
+    <div class="form-group">
+      <input name="CardNumber" ngModel="{{service.formData.CardNumber}}" class="form-control" placeholder="16 Digit Card Number" minLength="16" maxlength="16" required />
+    </div>
+
+    <!-- Expiration and CVV -->
+    <div class="row">
+        <div class="form-group col-md-6">
+            <input name="ExpirationDate" ngModel="{{service.formData.ExpirationDate}}" class="form-control" placeholder="MM/YY" minLength="5" maxlength="5" required />
+        </div>
+        <div class="form-group col-md-6">
+            <input name="CVV" type="password" ngModel="{{service.formData.CVV}}" class="form-control" placeholder="CVV" maxlength="3" required />
+        </div>
+    </div>
+
+    <!-- Submit -->
+    <div class="form-group">
+        <button type="submit" class="btn btn-success btn-lg" [disabled]="form.invalid">Submit</button>
+    </div>
+
+    </form>
