@@ -13067,11 +13067,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\samjag01\\OneDrive - Robert Half\\Desktop\\Asp.Net & Angular\\PaymentApp_WebAPI_ASP.NET\\WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\samjag01\\OneDrive - Robert Half\\Desktop\\ASP.Net_Angular\\PaymentApp_WebAPI_ASP.NET\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "C:\\Users\\samjag01\\OneDrive - Robert Half\\Desktop\\Asp.Net & Angular\\PaymentApp_WebAPI_ASP.NET\\WebAPI.csproj",
+      "projectPath": "C:\\Users\\samjag01\\OneDrive - Robert Half\\Desktop\\ASP.Net_Angular\\PaymentApp_WebAPI_ASP.NET\\WebAPI.csproj",
       "packagesPath": "C:\\Users\\samjag01\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\samjag01\\OneDrive - Robert Half\\Desktop\\Asp.Net & Angular\\PaymentApp_WebAPI_ASP.NET\\obj\\",
+      "outputPath": "C:\\Users\\samjag01\\OneDrive - Robert Half\\Desktop\\ASP.Net_Angular\\PaymentApp_WebAPI_ASP.NET\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,27 +1,45 @@
-# PaymentApp
+[![.NET Foundation](https://img.shields.io/badge/.NET%20Foundation-blueviolet.svg)](https://www.dotnetfoundation.org/)
+[![MIT License](https://img.shields.io/github/license/dotnet/aspnetcore?color=%230b0&style=flat-square)](https://github.com/dotnet/aspnetcore/blob/main/LICENSE.txt) [![Help Wanted](https://img.shields.io/github/issues/dotnet/aspnetcore/help%20wanted?color=%232EA043&label=help%20wanted&style=flat-square)](https://github.com/dotnet/aspnetcore/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) [![Good First Issues](https://img.shields.io/github/issues/dotnet/aspnetcore/good%20first%20issue?color=%23512BD4&label=good%20first%20issue&style=flat-square)](https://github.com/dotnet/aspnetcore/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+[![Discord](https://img.shields.io/discord/732297728826277939?style=flat-square&label=Discord&logo=discord&logoColor=white&color=7289DA)](https://aka.ms/dotnet-discord)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
+# ASP.NET Core
 
-## Development server
+ASP.NET Core is an open-source and cross-platform framework for building modern cloud based internet connected applications, such as web apps, IoT apps and mobile backends. ASP.NET Core apps run on [.NET Core](https://dot.net), a free, cross-platform and open-source application runtime. It was architected to provide an optimized development framework for apps that are deployed to the cloud or run on-premises. It consists of modular components with minimal overhead, so you retain flexibility while constructing your solutions. You can develop and run your ASP.NET Core apps cross-platform on Windows, Mac and Linux. [Learn more about ASP.NET Core](https://docs.microsoft.com/aspnet/core/).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Get Started
 
-## Code scaffolding
+Follow the [Getting Started](https://docs.microsoft.com/aspnet/core/getting-started) instructions in the [ASP.NET Core docs](https://docs.microsoft.com/aspnet/index).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Also check out the [.NET Homepage](https://www.microsoft.com/net) for released versions of .NET, getting started guides, and learning resources.
 
-## Build
+See the [Triage Process](https://github.com/dotnet/aspnetcore/blob/main/docs/TriageProcess.md) document for more information on how we handle incoming issues.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## How to Engage, Contribute, and Give Feedback
 
-## Running unit tests
+Some of the best ways to contribute are to try things out, file issues, join in design conversations,
+and make pull-requests.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- [Download our latest daily builds](./docs/DailyBuilds.md)
+- Follow along with the development of ASP.NET Core:
+  - [Community Standup](https://live.asp.net): The community standup is held every week and streamed live to YouTube. You can view past standups in the linked playlist.
+  - [Roadmap](https://aka.ms/aspnet/roadmap): The schedule and milestone themes for ASP.NET Core.
+- [Build ASP.NET Core source code](./docs/BuildFromSource.md)
+- Check out the [contributing](CONTRIBUTING.md) page to see the best places to log issues and start discussions.
 
-## Running end-to-end tests
+## Reporting security issues and bugs
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Security issues and bugs should be reported privately, via email, to the Microsoft Security Response Center (MSRC) secure@microsoft.com. You should receive a response within 24 hours. If for some reason you do not, please follow up via email to ensure we received your original message. Further information, including the MSRC PGP key, can be found in the [Security TechCenter](https://technet.microsoft.com/en-us/security/ff852094.aspx).
 
-## Further help
+## Related projects
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+These are some other repos for related projects:
+
+- [Documentation](https://github.com/aspnet/Docs) - documentation sources for https://docs.microsoft.com/aspnet/core/
+- [Entity Framework Core](https://github.com/dotnet/efcore) - data access technology
+- [Runtime](https://github.com/dotnet/runtime) - cross-platform runtime for cloud, mobile, desktop, and IoT apps
+- [Razor Compiler](https://github.com/dotnet/razor-compiler) - the parser and the C# code generator for the Razor syntax
+- [Razor Tooling](https://github.com/dotnet/razor-tooling) - tools for working on Razor ASP.NET Core apps using [Visual Studio](https://visualstudio.com), [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/), and [Visual Studio Code](https://code.visualstudio.com/).
+
+## Code of conduct
+
+See [CODE-OF-CONDUCT](./CODE-OF-CONDUCT.md)

@@ -52,3 +52,21 @@ C:\Users\samjag01\OneDrive - Robert Half\Desktop\Asp.Net & Angular\PaymentApp_We
 C:\Users\samjag01\OneDrive - Robert Half\Desktop\Asp.Net & Angular\PaymentApp_WebAPI_ASP.NET\obj\Debug\netcoreapp2.2\WebAPI.dll
 C:\Users\samjag01\OneDrive - Robert Half\Desktop\Asp.Net & Angular\PaymentApp_WebAPI_ASP.NET\obj\Debug\netcoreapp2.2\WebAPI.pdb
 C:\Users\samjag01\OneDrive - Robert Half\Desktop\Asp.Net & Angular\PaymentApp_WebAPI_ASP.NET\obj\Debug\netcoreapp2.2\WebAPI.genruntimeconfig.cache
+C:\Users\samjag01\OneDrive - Robert Half\Desktop\ASP.Net_Angular\PaymentApp_WebAPI_ASP.NET\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\samjag01\OneDrive - Robert Half\Desktop\ASP.Net_Angular\PaymentApp_WebAPI_ASP.NET\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\samjag01\OneDrive - Robert Half\Desktop\ASP.Net_Angular\PaymentApp_WebAPI_ASP.NET\bin\Debug\netcoreapp2.2\WebAPI.deps.json
+C:\Users\samjag01\OneDrive - Robert Half\Desktop\ASP.Net_Angular\PaymentApp_WebAPI_ASP.NET\bin\Debug\netcoreapp2.2\WebAPI.runtimeconfig.json
+C:\Users\samjag01\OneDrive - Robert Half\Desktop\ASP.Net_Angular\PaymentApp_WebAPI_ASP.NET\bin\Debug\netcoreapp2.2\WebAPI.runtimeconfig.dev.json
+C:\Users\samjag01\OneDrive - Robert Half\Desktop\ASP.Net_Angular\PaymentApp_WebAPI_ASP.NET\bin\Debug\netcoreapp2.2\WebAPI.dll
+C:\Users\samjag01\OneDrive - Robert Half\Desktop\ASP.Net_Angular\PaymentApp_WebAPI_ASP.NET\bin\Debug\netcoreapp2.2\WebAPI.pdb
+C:\Users\samjag01\OneDrive - Robert Half\Desktop\ASP.Net_Angular\PaymentApp_WebAPI_ASP.NET\obj\Debug\netcoreapp2.2\WebAPI.csproj.AssemblyReference.cache
+C:\Users\samjag01\OneDrive - Robert Half\Desktop\ASP.Net_Angular\PaymentApp_WebAPI_ASP.NET\obj\Debug\netcoreapp2.2\WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samjag01\OneDrive - Robert Half\Desktop\ASP.Net_Angular\PaymentApp_WebAPI_ASP.NET\obj\Debug\netcoreapp2.2\WebAPI.AssemblyInfoInputs.cache
+C:\Users\samjag01\OneDrive - Robert Half\Desktop\ASP.Net_Angular\PaymentApp_WebAPI_ASP.NET\obj\Debug\netcoreapp2.2\WebAPI.AssemblyInfo.cs
+C:\Users\samjag01\OneDrive - Robert Half\Desktop\ASP.Net_Angular\PaymentApp_WebAPI_ASP.NET\obj\Debug\netcoreapp2.2\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\samjag01\OneDrive - Robert Half\Desktop\ASP.Net_Angular\PaymentApp_WebAPI_ASP.NET\obj\Debug\netcoreapp2.2\WebAPI.RazorAssemblyInfo.cache
+C:\Users\samjag01\OneDrive - Robert Half\Desktop\ASP.Net_Angular\PaymentApp_WebAPI_ASP.NET\obj\Debug\netcoreapp2.2\WebAPI.RazorAssemblyInfo.cs
+C:\Users\samjag01\OneDrive - Robert Half\Desktop\ASP.Net_Angular\PaymentApp_WebAPI_ASP.NET\obj\Debug\netcoreapp2.2\WebAPI.RazorTargetAssemblyInfo.cache
+C:\Users\samjag01\OneDrive - Robert Half\Desktop\ASP.Net_Angular\PaymentApp_WebAPI_ASP.NET\obj\Debug\netcoreapp2.2\WebAPI.dll
+C:\Users\samjag01\OneDrive - Robert Half\Desktop\ASP.Net_Angular\PaymentApp_WebAPI_ASP.NET\obj\Debug\netcoreapp2.2\WebAPI.pdb
+C:\Users\samjag01\OneDrive - Robert Half\Desktop\ASP.Net_Angular\PaymentApp_WebAPI_ASP.NET\obj\Debug\netcoreapp2.2\WebAPI.genruntimeconfig.cache
