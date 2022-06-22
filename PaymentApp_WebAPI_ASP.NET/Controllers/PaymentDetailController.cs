@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using WebAPI.Interface;
 using WebAPI.Models;
  // CRUD Operations
 namespace WebAPI.Controllers
@@ -13,94 +14,48 @@ namespace WebAPI.Controllers
     [ApiController]
     public class PaymentDetailController : ControllerBase
     {
-        private readonly PaymentDetailContext _context;
+        private IPayment _paymentServices;
 
-        public PaymentDetailController(PaymentDetailContext context)                            // Constructor that takes the param context in Startup.cs - `services.AddDbContext`
+        public PaymentDetailController(IPayment paymentServices)                                // Constructor that takes the param context in Startup.cs - `services.AddDbContext`
         {
-            _context = context;
+            _paymentServices = paymentServices;
         }
 
         // GET: api/PaymentDetail
         [HttpGet]
         public async Task<ActionResult<IEnumerable<PaymentDetail>>> GetPaymentDetails()         // returns the details for DB Table    
         {
-            return await _context.PaymentDetails.ToListAsync();
+            return await _paymentServices.GetAllPayments();
         }
 
         // GET: api/PaymentDetail/5
         [HttpGet("{id}")]
         public async Task<ActionResult<PaymentDetail>> GetPaymentDetail(int id)
         {
-            var paymentDetail = await _context.PaymentDetails.FindAsync(id);
 
-            if (paymentDetail == null)
-            {
-                return NotFound();
-            }
-
-            return paymentDetail;
+            return await _paymentServices.GetById(id);
         }
-
 
         // PUT: api/PaymentDetail/5                     
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutPaymentDetail(int id, PaymentDetail paymentDetail)   // for `id` use URI, for `paymentDetail` use "boarding"
+        public async Task<ActionResult<PaymentDetail>> PutPaymentDetail(int id, PaymentDetail paymentDetail)     // for `id` use URI, for `paymentDetail` use "boarding"
         {
-            if (id != paymentDetail.PMId)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(paymentDetail).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!PaymentDetailExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
+            return await _paymentServices.Update(id, paymentDetail);
         }
 
         // POST: api/PaymentDetail
         [HttpPost]
         public async Task<ActionResult<PaymentDetail>> PostPaymentDetail(PaymentDetail paymentDetail)
         {
-            _context.PaymentDetails.Add(paymentDetail);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetPaymentDetail", new { id = paymentDetail.PMId }, paymentDetail);
+            return await _paymentServices.Create(paymentDetail);
         }
 
         // DELETE: api/PaymentDetail/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<PaymentDetail>> DeletePaymentDetail(int id)
         {
-            var paymentDetail = await _context.PaymentDetails.FindAsync(id);
-            if (paymentDetail == null)
-            {
-                return NotFound();
-            }
 
-            _context.PaymentDetails.Remove(paymentDetail);
-            await _context.SaveChangesAsync();
-
-            return paymentDetail;
-        }
-
-        private bool PaymentDetailExists(int id)
-        {
-            return _context.PaymentDetails.Any(e => e.PMId == id);
+            return await _paymentServices.Delete(id);
         }
     }
 }

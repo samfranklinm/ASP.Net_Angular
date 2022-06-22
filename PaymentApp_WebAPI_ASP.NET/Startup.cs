@@ -11,7 +11,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json.Serialization;
+using WebAPI.Interface;
 using WebAPI.Models;
+using WebAPI.Services;
 
 namespace WebAPI
 {
@@ -40,6 +42,8 @@ namespace WebAPI
             options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
 
             services.AddCors();                                                                           // so that we can consume another application opened in another port
+
+            services.AddScoped<IPayment, PaymentServices>();                                              // so that the program knows interface and services have been seperated from controller
 
         }
 
