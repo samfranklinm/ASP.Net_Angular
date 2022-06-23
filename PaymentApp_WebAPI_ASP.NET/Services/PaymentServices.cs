@@ -26,7 +26,7 @@ namespace WebAPI.Services
             return await _context.PaymentDetails.ToListAsync();
         }
         // GET (by ID)
-        public async Task<PaymentDetail> GetById(Guid id)
+        public async Task<PaymentDetail> GetById(int id)
         {   
             // returns payment details for the provided ID
             return await _context.PaymentDetails.FindAsync(id); 
@@ -44,7 +44,7 @@ namespace WebAPI.Services
         }
 
         // PUT
-        public async Task<PaymentDetail> Update(Guid id, PaymentDetail paymentDetail)
+        public async Task<PaymentDetail> Update(int id, PaymentDetail paymentDetail)
         {
             // update the provided payment details
             _context.PaymentDetails.Update(paymentDetail);
@@ -54,7 +54,7 @@ namespace WebAPI.Services
         }
 
         // DELETE 
-        public async Task<PaymentDetail> Delete(Guid id)
+        public async Task<PaymentDetail> Delete(int id)
         {
             // Find the entry by id
             var paymentDetail = await _context.PaymentDetails.FindAsync(id);

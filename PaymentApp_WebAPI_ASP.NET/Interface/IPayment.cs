@@ -8,10 +8,10 @@ namespace WebAPI.Interface
     public interface IPayment
     {
         Task<List<PaymentDetail>> GetAllPayments();
-        Task<PaymentDetail> GetById(Guid id);
+        Task<PaymentDetail> GetById(int id);
         Task<PaymentDetail> Create(PaymentDetail paymentDetail);
-        Task<PaymentDetail> Update(Guid id, PaymentDetail paymentDetail);
-        Task<PaymentDetail> Delete(Guid id);
+        Task<PaymentDetail> Update(int id, PaymentDetail paymentDetail);
+        Task<PaymentDetail> Delete(int id);
        
     }
 }

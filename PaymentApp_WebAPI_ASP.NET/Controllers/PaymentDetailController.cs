@@ -30,7 +30,7 @@ namespace WebAPI.Controllers
 
         // GET: api/PaymentDetail/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<PaymentDetail>> GetPaymentDetail(Guid id)
+        public async Task<ActionResult<PaymentDetail>> GetPaymentDetail(int id)
         {
 
             return await _paymentServices.GetById(id);
@@ -38,7 +38,7 @@ namespace WebAPI.Controllers
 
         // PUT: api/PaymentDetail/5                     
         [HttpPut("{id}")]
-        public async Task<ActionResult<PaymentDetail>> PutPaymentDetail(Guid id, PaymentDetail paymentDetail)     // for `id` use URI, for `paymentDetail` use "boarding"
+        public async Task<ActionResult<PaymentDetail>> PutPaymentDetail(int id, PaymentDetail paymentDetail)     // for `id` use URI, for `paymentDetail` use "boarding"
         {
             return await _paymentServices.Update(id, paymentDetail);
         }
@@ -52,7 +52,7 @@ namespace WebAPI.Controllers
 
         // DELETE: api/PaymentDetail/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<PaymentDetail>> DeletePaymentDetail(Guid id)
+        public async Task<ActionResult<PaymentDetail>> DeletePaymentDetail(int id)
         {
 
             return await _paymentServices.Delete(id);
