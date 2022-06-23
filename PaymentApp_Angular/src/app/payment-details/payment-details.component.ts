@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PaymentDetailService } from '../shared/payment-detail.service';
+import { PaymentDetailService } from '../payment-shared/payment-detail.service';
 
 @Component({
   selector: 'app-payment-details',

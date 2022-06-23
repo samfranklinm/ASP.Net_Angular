@@ -1,3 +1,29 @@
 <div class="container">
-  <app-payment-details></app-payment-details>
+  <h1 class="display-4 text-center">The Payment App</h1>
+  <h3 class="text-center" style="margin-top: 70px">Select a form</h3>
+  <div class="select-app">
+    <button
+      type="submit"
+      class="btn btn-primary btn-lg"
+      (click)="[showForm('paymentdetail'), toggle()]"
+    >
+      Payment Detail Form
+    </button>
+
+    <button
+      type="submit"
+      class="btn btn-info btn-lg"
+      (click)="[showForm('userdetail'), toggle()]"
+    >
+      User Detail Form
+    </button>
+  </div>
+
+  <div *ngIf="currDiv == 'paymentdetail'" [hidden]="showHide">
+    <app-payment-details></app-payment-details>
+  </div>
+
+  <div *ngIf="currDiv == 'userdetail'" [hidden]="showHide">
+    <app-user-details></app-user-details>
+  </div>
 </div>
