@@ -10,5 +10,6 @@ namespace WebAPI.Models
         }
 
         public DbSet<PaymentDetail> PaymentDetails { get; set; }
+        public DbSet<UserDetail> UserDetails { get; set; }
     }
 }
