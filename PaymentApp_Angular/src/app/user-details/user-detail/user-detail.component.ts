@@ -29,10 +29,10 @@ export class UserDetailComponent implements OnInit {
   }
 
   onSubmit(form: NgForm) {
-    if (form.value.PMId == 0) {
-      this.createUser(form); // create a new entry (PMId = )
+    if (form.value.UserId == 0) {
+      this.createUser(form); // create a new entry (zero UserID)
     } else {
-      this.updateUser(form); // otherwise modify an entry (a non-zero PMId)
+      this.updateUser(form); // otherwise modify an entry (a non-zero UserId)
     }
   }
 

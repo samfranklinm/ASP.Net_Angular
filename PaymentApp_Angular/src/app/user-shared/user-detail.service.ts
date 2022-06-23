@@ -15,6 +15,7 @@ export class UserDetailService {
 
   postUserDetail(formData: UserDetail) {
     // makes a POST request to the backend
+    console.log(formData);
     return this.http.post(this.rootUrl + '/User', formData);
   }
 
