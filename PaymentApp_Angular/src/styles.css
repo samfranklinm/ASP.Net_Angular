@@ -1,24 +1,29 @@
-
-input.ng-touched.ng-invalid{
-    border-color: #dc3545;
+.select-app {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
 }
 
-input.ng-valid{
-    border-color: #28a745;
+input.ng-touched.ng-invalid {
+  border-color: #dc3545;
 }
 
-.green-icon{
-    color: #28a745;
+input.ng-valid {
+  border-color: #28a745;
 }
-.red-icon{
-    color: #dc3545;
+
+.green-icon {
+  color: #28a745;
+}
+.red-icon {
+  color: #dc3545;
 }
 
 #toast-container > div {
-    opacity:1;
+  opacity: 1;
 }
 
-.table tr:hover{
-    background-color: #55c26f;
-    cursor: pointer;
+.table tr:hover {
+  background-color: #55c26f;
+  cursor: pointer;
 }

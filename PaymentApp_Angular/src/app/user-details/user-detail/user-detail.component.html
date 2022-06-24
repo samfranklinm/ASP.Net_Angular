@@ -1,0 +1,56 @@
+<form #userform="ngForm" autocomplete="off" (submit)="onSubmit(userform)">
+  <input name="UserId" type="hidden" ngModel="{{ service.formData.UserId }}" />
+  <div class="row">
+    <div class="form-group col-md-6">
+      <input
+        name="FirstName"
+        ngModel="{{ service.formData.FirstName }}"
+        class="form-control"
+        placeholder="First Name"
+        maxLength="30"
+        required
+      />
+    </div>
+    <div class="form-group col-md-6">
+      <input
+        name="LastName"
+        ngModel="{{ service.formData.LastName }}"
+        class="form-control"
+        placeholder="Last Name"
+        maxlength="30"
+        required
+      />
+    </div>
+    <div class="form-group col-md-6">
+      <input
+        name="DateOfBirth"
+        ngModel="{{ service.formData.DateOfBirth }}"
+        class="form-control"
+        placeholder="Date Of Birth"
+        maxlength="8"
+        required
+      />
+    </div>
+    <div class="form-group col-md-6">
+      <input
+        name="UserDateCreated"
+        ngModel="{{ service.formData.UserDateCreated }}"
+        class="form-control"
+        placeholder="User Created Date"
+        maxLength="8"
+        required
+      />
+    </div>
+  </div>
+
+  <!-- Submit -->
+  <div class="form-group col-md-6">
+    <button
+      type="submit"
+      class="btn btn-success btn-lg"
+      [disabled]="userform.invalid"
+    >
+      Submit
+    </button>
+  </div>
+</form>

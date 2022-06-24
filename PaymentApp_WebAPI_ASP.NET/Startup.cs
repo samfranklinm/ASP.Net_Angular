@@ -44,7 +44,7 @@ namespace WebAPI
             services.AddCors();                                                                           // so that we can consume another application opened in another port
 
             services.AddScoped<IPayment, PaymentServices>();                                              // so that the program knows interface and services have been seperated from controller
-
+            services.AddScoped<IUser, UserServices>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
